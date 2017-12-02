@@ -4,4 +4,4 @@ python:
 install:
   - pip install -r requirements.gitignore
 script:
-  - python DynamoExtractor.py
+  - bash test.sh
