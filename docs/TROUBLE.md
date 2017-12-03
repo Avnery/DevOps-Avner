@@ -7,7 +7,8 @@ I feel that although we perform tests and build in my current job, there's a "mi
 server. Not something too hard to understand and learn but defiantly something that requires learning.
 
 #Steps along the way:
-## PythonApp - Was pretty simple to build, didn't require anything special. Yet, due to lack of time, the app doesn't take care of possible 
+## PythonApp:
+Was pretty simple to build, didn't require anything special. Yet, due to lack of time, the app doesn't take care of possible 
 exceptions and failures and doesn't include any validations.
 ## DynamoDB:
 Still need to improve in using nosql DB's. I have to admit that I wasn’t familiar with the DB and the service and general and had to watch some 
