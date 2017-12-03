@@ -17,6 +17,8 @@ before_install:
 script:
   - curl 127.0.0.1:5000/secret
   - curl 127.0.0.1:5000/secret | jq '.[].secret_code'
+  - curl 127.0.0.1:5000/health
+
 
 after_success:
    - docker login -u "avnery" -p "5303280"
