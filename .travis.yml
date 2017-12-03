@@ -1,5 +1,8 @@
 sudo: required
 
+script:
+  - docker images
+
 language: python
 
 python:
@@ -17,5 +20,5 @@ script:
   - curl 127.0.0.1:5000/secret | jq '.[].secret_code'
 
 after_success:
-   - docker login -u "avnery" -p "5303280";
+   - docker login -u "avnery" -p "5303280"
    - docker push avnery/avner-devops:avner-devops-container
