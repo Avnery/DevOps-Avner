@@ -14,7 +14,8 @@ before_install:
 
 script:
   # Execute Ghost Inspector tests using the ngrok tunnel
-  curl 127.0.0.1:5000 | jq '.["secret_code"]'
+  echo curl 127.0.0.1:5000/secret
+  curl 127.0.0.1:5000/secret | jq '.["secret_code"]'
   #curl 127.0.0.1:5000 | jq '.[].secret_code'
   # Exit with a fail status if any tests have failed
   #  - if [ $(grep -c '"passing":false' $PWD/ghostinspector.json) -ne 0 ]; then exit 1; fi
