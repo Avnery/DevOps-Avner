@@ -20,4 +20,4 @@ script:
 
 after_success:
    - docker login -u "avnery" -p "5303280"
-   - docker push tag dynamoextractor:latest avnery/dynamoextractor:latest
+   - docker push avnery/dynamoextractor:latest
