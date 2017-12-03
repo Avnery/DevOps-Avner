@@ -18,5 +18,12 @@ def dynamdb_extractor():
     items = response['Items']
     return json.dumps(items)
 
+
+@extractor.route("/health")
+def health():
+    items = {'container': r"https://cloud.docker.com/app/avnery/repository/docker/avnery/dynamoextractor/general",
+             'project': "https://github.com/Avnery/DevOps-Avner", 'status': "Healthy"}
+    return json.dumps(items)
+
 if __name__ == "__main__":
     extractor.run(host="0.0.0.0", port=5000)
