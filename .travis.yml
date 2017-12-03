@@ -10,7 +10,7 @@ services:
   
 before_install:
 - docker images
-- docker build -t dynamoextractor -f .\Dockerfile .
+- docker build -t avnery/dynamoextractor -f .\Dockerfile .
 - docker images
 - docker run -d -p 127.0.0.1:5000:5000 dynamoextractor
 
