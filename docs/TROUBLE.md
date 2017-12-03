@@ -6,7 +6,7 @@ Due to two mistakes in the challenge instructions I received 12 additional hours
 I feel that although we perform tests and build in my current job, there's a "missing link" when it comes to integrating with virtual 
 server. Not something too hard to understand and learn but defiantly something that requires learning.
 
-#Steps along the way:
+# Steps along the way:
 ## PythonApp:
 Was pretty simple to build, didn't require anything special. Yet, due to lack of time, the app doesn't take care of possible 
 exceptions and failures and doesn't include any validations.
